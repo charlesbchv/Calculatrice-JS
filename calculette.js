@@ -11,7 +11,8 @@ do{
                         "\n2. Soustraire"+
                         "\n3. Diviser"+
                         "\n4. Multiplier"+
-                        "\n5. Carré d'un nombre");
+                        "\n5. Carré d'un nombre"+
+			"\n6. Factoriel");
 
 }while(question=="" || question==null || isNaN(question)==true);
  
@@ -25,6 +26,15 @@ function addition(){
     alert("La réponse est : " + (nb1+nb2));
 
 
+}
+
+function factoriel(){
+	let nb1=prompt("Saisissez votre nombre :");
+	let res=1;
+	for (let i=0; i<nb1; i++){
+		res*=i+1;
+	}
+	alert("Factoriel de "+nb1+" est : "+res);
 }
 
 function carre(){
@@ -93,6 +103,11 @@ function multiplication(){
             carre();
 	    confirmer();
             break;
+	 case "6" :
+	    factoriel();
+            confirmer();
+	    break;
+		 
 
     }
 
@@ -124,6 +139,16 @@ function addition(){
     alert("La réponse est : " + (nb1+nb2));
 
 
+}
+	    
+	    
+function factoriel(){
+	let nb1=prompt("Saisissez votre nombre :");
+	let res=1;
+	for (let i=0; i<nb1; i++){
+		res*=i+1;
+	}
+	alert("Factoriel de "+nb1+" est : "+res);
 }
 
 function carre(){
@@ -192,6 +217,11 @@ switch (question){
             carre();
 	    confirmer();
             break;
+		
+	case "6" :
+	    factoriel();
+            confirmer();
+	    break;
 
 }
 
