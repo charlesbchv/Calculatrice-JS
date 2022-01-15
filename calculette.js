@@ -77,7 +77,40 @@ function multiplication(){
     nb2 = parseFloat(nb2);
 
     alert("La réponse est : " + (nb1*nb2));
+}
 
+var isAlpha = function(ch){
+    if (ch >= "A" && ch <= "z"){
+        return true
+    }
+
+}
+
+
+function cezar(){
+
+    let key = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u', 
+       'i':'v', 'j':'w', 'k':'x', 'l':'y', 'm':'z', 'n':'a', 'o':'b', 'p':'c', 
+       'q':'d', 'r':'e', 's':'f', 't':'g', 'u':'h', 'v':'i', 'w':'j', 'x':'k',
+       'y':'l', 'z':'m', 'A':'N', 'B':'O', 'C':'P', 'D':'Q', 'E':'R', 'F':'S', 
+       'G':'T', 'H':'U', 'I':'V', 'J':'W', 'K':'X', 'L':'Y', 'M':'Z', 'N':'A', 
+       'O':'B', 'P':'C', 'Q':'D', 'R':'E', 'S':'F', 'T':'G', 'U':'H', 'V':'I', 
+       'W':'J', 'X':'K', 'Y':'L', 'Z':'M'};
+
+    let resultat="";
+    let texte=prompt("Veuillez saisir la phrase que vous voulez chiffrer OU déchiffrer :")
+    let i = 0;
+    while (i<texte.length){
+        c=texte[i];
+        if (isAlpha(c)){
+            resultat+=key[c];
+        }
+        else{
+            resultat+=c;
+        }
+        i++;
+    }
+    alert(resultat);
 
 }
 
@@ -103,12 +136,14 @@ function multiplication(){
             carre();
 	    confirmer();
             break;
-	 case "6" :
+	case "6" :
 	    factoriel();
             confirmer();
 	    break;
-		 
-
+	case "7" :
+	    cezar();
+            confirmer();
+	    break;
     }
 
 
@@ -191,7 +226,40 @@ function multiplication(){
     nb2 = parseFloat(nb2);
 
     alert("La réponse est : " + (nb1*nb2));
+}
+	  
+var isAlpha = function(ch){
+    if (ch >= "A" && ch <= "z"){
+        return true
+    }
 
+}
+
+
+function cezar(){
+
+    let key = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u', 
+       'i':'v', 'j':'w', 'k':'x', 'l':'y', 'm':'z', 'n':'a', 'o':'b', 'p':'c', 
+       'q':'d', 'r':'e', 's':'f', 't':'g', 'u':'h', 'v':'i', 'w':'j', 'x':'k',
+       'y':'l', 'z':'m', 'A':'N', 'B':'O', 'C':'P', 'D':'Q', 'E':'R', 'F':'S', 
+       'G':'T', 'H':'U', 'I':'V', 'J':'W', 'K':'X', 'L':'Y', 'M':'Z', 'N':'A', 
+       'O':'B', 'P':'C', 'Q':'D', 'R':'E', 'S':'F', 'T':'G', 'U':'H', 'V':'I', 
+       'W':'J', 'X':'K', 'Y':'L', 'Z':'M'};
+
+    let resultat="";
+    let texte=prompt("Veuillez saisir la phrase que vous voulez chiffrer OU déchiffrer :")
+    let i = 0;
+    while (i<texte.length){
+        c=texte[i];
+        if (isAlpha(c)){
+            resultat+=key[c];
+        }
+        else{
+            resultat+=c;
+        }
+        i++;
+    }
+    alert(resultat);
 
 }
 
@@ -222,10 +290,13 @@ switch (question){
 	    factoriel();
             confirmer();
 	    break;
+		
+	case "7" :
+	    cezar();
+            confirmer();
+	    break;
 
 }
-
-
 
 
     }
