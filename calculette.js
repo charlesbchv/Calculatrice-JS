@@ -12,7 +12,8 @@ do{
                         "\n3. Diviser"+
                         "\n4. Multiplier"+
                         "\n5. Carré d'un nombre"+
-			"\n6. Factoriel");
+			"\n6. Factoriel"+
+    			"\n7. Cryptographie - Chiffrement de Cezar");
 
 }while(question=="" || question==null || isNaN(question)==true);
  
@@ -247,7 +248,8 @@ function cezar(){
        'W':'J', 'X':'K', 'Y':'L', 'Z':'M'};
 
     let resultat="";
-    let texte=prompt("Veuillez saisir la phrase que vous voulez chiffrer OU déchiffrer :")
+    let texte=prompt("Chiffrement de César est une technique de cryptage dans laquelle chaque lettre du texte est remplacée par une autre lettre mais avec un décalage."+ 
+    "\n"+"\nVeuillez saisir la phrase que vous voulez chiffrer OU déchiffrer :");
     let i = 0;
     while (i<texte.length){
         c=texte[i];
