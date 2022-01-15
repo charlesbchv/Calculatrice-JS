@@ -74,47 +74,27 @@ function multiplication(){
  switch (question){
         case "1" :
             addition();
+	    confirmer();
             break;
         case "2" :
             soustraction();
+	    confirmer();
             break;
         case "3":
             division();
+	    confirmer();
             break;
         case "4" :
             multiplication();
+	    confirmer();
             break;
 
         case "5" :
             carre();
+	    confirmer();
             break;
 
     }
-
-    switch (question){
-	case "1" :
-	    addition();
-	    confirmer();
-	    break;
-	case "2" :
-	    soustraction();
-	    confirmer();
-	    break;
-	case "3":
-	    division();
-	    confirmer();
-	    break;
-	case "4" :
-	    multiplication();
-	    confirmer();
-	    break;
-
-	case "5" :
-	    carre();
-	    confirmer();
-	    break;
-
-  }
 
 
 
@@ -191,22 +171,27 @@ function multiplication(){
 }
 
 switch (question){
-    case "1" :
-        addition();
-        break;
-    case "2" :
-        soustraction();
-        break;
-    case "3":
-        division();
-        break;
-    case "4" :
-        multiplication();
-        break;
+        case "1" :
+            addition();
+	    confirmer();
+            break;
+        case "2" :
+            soustraction();
+	    confirmer();
+            break;
+        case "3":
+            division();
+	    confirmer();
+            break;
+        case "4" :
+            multiplication();
+	    confirmer();
+            break;
 
-    case "5" :
-        carre();
-        break;
+        case "5" :
+            carre();
+	    confirmer();
+            break;
 
 }
 
